@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         Icon="/Images/DemoIco.png"
+        SizeToContent="WidthAndHeight"
         Title="MainWindow" Height="450" Width="800">
     <!--x:Class="Chapter02.MainWindow表示该段代码对应的类是Chapter02.MainWindow类-->
     <!--    命名空间映射
@@ -29,8 +30,19 @@
                     <ItemGroup>
                         <None Remove="Images\DemoIco.png" />
                     </ItemGroup>
-
-
+            
+    
+            SizeToContent="WidthAndHeight"
+            SizeToContent:让控件 / 窗口自动调整尺寸以适配其内容，无需手动设置宽高。
+            None（默认）	不自动适配，按手动设置的 Width/Height 或布局约束显示（如父容器限制）。
+            Width	仅自动调整宽度以适配内容，高度保持手动设置或默认值。
+            Height	仅自动调整高度以适配内容，宽度保持手动设置或默认值。
+    
+            还有设置窗体最大、最小长宽的属性，分别名为：MaxWidth/MinWidth/MsxHeight/Minheight;
+    
+            Topmost 设置主窗体是否覆盖子窗体  true：覆盖；false：不覆盖。默认不覆盖；
+            
+            
 
     -->
     
