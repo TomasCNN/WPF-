@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Chapter02"
              StartupUri="MainWindow.xaml">
+    <!--配置、资源、样式-->
     <Application.Resources>
          
     </Application.Resources>

@@ -6,6 +6,30 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>Images\demo.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Icos\**" />
+    <EmbeddedResource Remove="Icos\**" />
+    <None Remove="Icos\**" />
+    <Page Remove="Icos\**" />
+  </ItemGroup>
+	
+	<!--设置主窗口的图标-->
+  <ItemGroup>
+    <None Remove="Images\DemoIco.png" />
+  </ItemGroup>
+
+	<!--设置软件图标-->
+  <ItemGroup>
+    <Content Include="Images\demo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\DemoIco.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
 
 </Project>
